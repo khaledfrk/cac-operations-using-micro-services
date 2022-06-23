@@ -1,0 +1,59 @@
+.chart{
+    margin: 20px;
+    padding: 30px;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+.chartTitle{
+    margin-bottom: 20px;
+}
+.sidebar-link-container{
+    position: fixed;
+}
+.others-stats{
+    margin-left: 290px;
+    flex:3;
+}
+
+.calendar-icon{
+    display: hidden;
+}
+.stats-contain{
+    display: flex;
+    justify-content: center;
+}
+.stats{
+    display: block;
+    padding: 50px;
+    color: #62AEC5;
+    border:solid 1px #62AEC5;
+    margin: 10px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    box-shadow:5px 8px 10px 0px #87cce0, 
+     0px 16px 12px 5px #afe4f3,
+     0 39px 5px 0px #fff;
+
+     transition: box-shadow 2s;
+
+}
+.stats:hover{
+  box-shadow:20px 23px 35px 0px #87cce0, 
+  0px 36px 25px 20px #afe4f3,
+  0 39px 5px 0px #fff;
+}
+.chart{
+    width: 1300px;
+    box-shadow:5px 8px 10px 0px #87cce0, 
+     0px 16px 12px 5px #afe4f3,
+     0 39px 5px 0px #fff;
+
+     transition: box-shadow 2s;
+
+}
+.chart:hover{
+  box-shadow:20px 23px 35px 0px #87cce0, 
+  0px 36px 25px 20px #afe4f3,
+  0 39px 5px 0px #fff;
+}

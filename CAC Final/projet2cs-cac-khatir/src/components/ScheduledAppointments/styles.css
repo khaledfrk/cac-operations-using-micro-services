@@ -1,0 +1,12 @@
+.title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: medium;
+  font-weight:900;
+  letter-spacing: 0.5px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 50px;
+  margin-right: 25px;
+  color: rgb(44, 43, 43);
+}

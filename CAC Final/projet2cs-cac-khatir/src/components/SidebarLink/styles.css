@@ -1,0 +1,35 @@
+.customIcon {
+  width: 18px;
+  padding-right: 10px;
+  padding-left: 6px;
+}
+
+li {
+  list-style-type: none;
+  padding: 14px 10px;
+}
+
+.active-link {
+  color: #f692b8;
+}
+
+.active-link,
+.active-link .customIcon {
+  color: #f692b8;
+}
+
+.divider {
+  width: 100%;
+  border: 1px solid #a0a4a8;
+  margin-top: 15px;
+}
+
+.link-item {
+  margin: 15px 0px;
+}
+
+.link-text {
+  font-size: 16px;
+  color: rgb(180, 253, 255);
+  font-weight: 700;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Thymeleaf Tutorial</title>
+</head>
+<body>
+
+<h2>Manage Locations</h2>
+
+<div>
+
+
+</div>
+
+<ul>
+    <!--/*@thymesVar id="id_operation" type="java.lang.Long"*/-->
+<!--
+    <li th:each="operation : ${operations}">
+
+        <span th:feild="${operation.id_operation}">Default</span>
+    </li>
+-->
+    <!--/*@thymesVar id="operation" type="com.example.msoperation.Entities.Operation"*/-->
+    <!--/*@thymesVar id="Operation" type="com.example.msoperation.Entities.Operation"*/-->
+    <!--/*@thymesVar id="id_operation" type="java.lang.Integer"*/-->
+    <!--
+    <form th:action="@{/operations}" th:object="${operation}" method="get">
+
+        <p>Id: <label>
+            <input type="text" th:field="${Operation.idOperation}" />
+        </label></p>
+
+        <p><input type="submit" value="Add" /></p>
+    </form>
+    -->
+    <tr th:each="operation : ${operations}">
+        <td>operation<p th:text="${operation.getIdOperation()}"></p></td>
+        <td><a href="#" th:text="${operation.getSalle().getNom()}"></a></td>
+        <td><a href="#" th:text="${operation.getSalle().getNbLits()}"></a></td>
+    </tr>
+
+<div>
+
+</div>
+    <li th:each="operation : ${operations}">
+
+        op <span th:text="${operation.getIdOperation()}"></span>
+        salle
+        <span th:text="${operation.getSalle().getNom()}"></span>
+        <span th:text="${operation.getSalle().getNbLits()}"></span>
+
+        equipe:
+        <span th:text="${operation.getChirurgien_residents().get(0).getNom()}"></span>
+
+
+
+    </li>
+
+</ul>
+
+</body>
+</html>

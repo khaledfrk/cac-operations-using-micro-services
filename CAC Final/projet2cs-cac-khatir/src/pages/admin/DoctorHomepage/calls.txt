@@ -1,0 +1,52 @@
+const sidebarProps = [
+  {
+    id: 1,
+    text: "Pocetna",
+    path: "/",
+    icon: "fa-solid fa-chart-pie",
+    isActive: true,
+  },
+];
+
+const headerProps = {
+  avatarUrl: "nikolaSlika 1.jpg",
+  welcomeMsg: "Dobro jutro",
+  userName: "Dr. Paun",
+  userTitle: "Kardiolog",
+};
+
+const generalStatsProps = [
+  {
+    image: "fa-solid fa-briefcase-medical",
+    text: "Zakazani pregledi",
+    number: "34",
+  },
+];
+
+const props = [
+  {
+    sidebarProps: sidebarProps,
+    headerProps: headerProps,
+    generalStatsProps: generalStatsProps,
+  },
+];
+
+    {/* render () {
+    const { elements } = this.props;
+    const { filterStr } = this.state;
+
+    const filteredElements = elements
+      .filter(e => e.includes(filterStr))
+      .map(e => <li>{ e }</li>)
+
+    return (
+      <div>
+        <input
+          type="text"
+          value={ filterStr }
+          onChange={ e => this.setState({ filterStr: e.target.value }) } />
+        <ul>
+          { filteredElements }
+        </ul>
+      </div>
+    ); */}

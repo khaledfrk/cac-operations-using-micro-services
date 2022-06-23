@@ -1,0 +1,59 @@
+
+server:
+  port: 9191
+
+
+spring:
+  application:
+    name: API-GATEWAY
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods:
+              - PUT
+              - GET
+              - POST
+              - DELETE
+            allowedHeaders: "*"
+
+      routes:
+        - id: CARDIO-AUTH-SERVICE
+          uri: lb://CARDIO-AUTH-SERVICE
+          predicates:
+            - Path=/service-auth/**
+          filters:
+            - RewritePath=/service-auth/(?<s>.*), /${s}
+
+        - id: OPERATION-SERVICE
+          uri: lb://OPERATION-SERVICE
+          predicates:
+            - Path=/service-operation/**
+          filters:
+            - RewritePath=/service-operation/(?<s>.*), /${s}
+
+        - id: STOCK-SERVICE
+          uri: lb://STOCK-SERVICE
+          predicates:
+            - Path=/service-stock/**
+          filters:
+            - RewritePath=/service-stock/(?<s>.*), /${s}
+
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8888/eureka/
+  instance:
+    hostname: localhost
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+

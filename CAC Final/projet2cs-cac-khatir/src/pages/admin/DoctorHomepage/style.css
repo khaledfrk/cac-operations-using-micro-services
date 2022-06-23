@@ -1,0 +1,13 @@
+input{
+    /* background-color: #4dc8ca; */
+	border: 1px solid #6dcbeb;
+	border-radius: 8px;
+	padding: 10px 15px;
+	margin: 8px 15px;
+	width: 30%;
+}
+.filter{
+    background-color: #4dc8ca;
+    color: white;
+    padding: 10px 15px ;
+}

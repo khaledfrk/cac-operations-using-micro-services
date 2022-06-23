@@ -1,0 +1,106 @@
+.myTitle {
+  margin-left: 5%;
+  margin-top: 6%;
+  margin-bottom: 2%;
+  letter-spacing: 0.2px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+
+  color: #25282b;
+}
+
+.myTable {
+  box-shadow: 0px 12px 26px rgba(16, 30, 115, 0.06);
+  border-radius: 8px;
+  background-color: #ffffff;
+  margin-left: 5%;
+  margin-top: 2%;
+  width: 90%;
+  text-align: center;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+}
+
+.responsivnes {
+  overflow-x: auto;
+}
+
+.buttonIcon {
+  border: 0px;
+  background: transparent;
+  color: #ff6760;
+}
+
+.buttonIconBlue {
+  border: 0px;
+  background: transparent;
+  color: #336cfb;
+}
+
+.myIcon {
+  color: #336cfb;
+}
+
+table.table-bordered > thead > tr {
+  border-bottom: 1px solid #e9f0ff;
+}
+table.table-bordered > tbody > tr {
+  border-bottom: 1px solid #e9f0ff;
+}
+
+.table-hover tbody tr:hover td {
+  background: #e9f0ff;
+}
+
+.table > :not(:first-child) {
+  border-top: 0px;
+}
+
+.myPagination {
+  padding-left: 5%;
+}
+.myPagButton {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  background-color: #ffffff;
+  border-color: #336cfb;
+  color: #25282b;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin: 2px;
+}
+.paginationItem.active {
+  background-color: #336cfb;
+  color: #ffffff;
+}
+.prev,
+.next {
+  padding: 9px 11px;
+}
+.prev.disabled,
+.next.disabled {
+  pointer-events: none;
+  box-shadow: none;
+  color: #999;
+  border-color: #999;
+}
+.header {
+  background-color: #e9f0ff;
+  color: #25282b;
+  letter-spacing: 0.1px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+}
+
+.body {
+  letter-spacing: 0.1px;
+  color: #52575c;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+}

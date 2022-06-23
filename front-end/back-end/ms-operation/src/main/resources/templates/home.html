@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.thymeleaf.org ">
+
+<head>
+  <title>Good Thymes Virtual Grocery</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+</head>
+
+<body>
+
+
+<!--/*@thymesVar id="operation" type="org"*/-->
+<div th:object="${operation.operation}">
+  <p>Name: <span th:text="*{firstName}">Sebastian</span>.</p>
+  <p>Surname: <span th:text="*{lastName}">Pepper</span>.</p>
+  <p>Nationality: <span th:text="*{nationality}">Saturn</span>.</p>
+</div>
+
+</body>
+
+</html>

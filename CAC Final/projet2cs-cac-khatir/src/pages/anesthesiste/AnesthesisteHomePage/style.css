@@ -1,0 +1,17 @@
+.page-container{
+    margin: 70px;
+}
+.operations-scheduled{
+    margin: 50px;
+    box-shadow:5px 8px 10px 0px #87cce0, 
+     0px 16px 12px 5px #afe4f3,
+     0 39px 5px 0px #fff;
+
+     transition: box-shadow 2s;
+
+}
+.operations-scheduled:hover{
+  box-shadow:20px 23px 35px 0px #87cce0, 
+  0px 36px 25px 20px #afe4f3,
+  0 39px 5px 0px #fff;
+}

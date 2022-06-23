@@ -1,0 +1,164 @@
+/* .appointment {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  width: 100%;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: -5px 5px 5px 1px rgba(226, 222, 222, 0.75);
+} */
+
+.text1 {
+    font-size: 20px;
+  }
+  
+  .text2 {
+    margin-left: 10px;
+    font-size: 16px;
+    color: #a0a4a8;
+  }
+  .text3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #2f9580;
+  }
+  
+  .d-flex{
+    font-family: "Roboto";
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: -5px 5px 5px 1px rgba(68, 179, 162, 0.75);
+    width: 60%;
+
+  }
+  
+  .details{
+    margin-left: 15px;
+    margin-right:15px ;
+    margin-bottom: 15px;
+  }
+  
+  /* .appointmentStatus {
+    border-radius: 6px;
+    width: 15%;
+    height: 50%;
+    font-size: 12px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+  } */
+  
+  /* hr {
+    width: 62%;
+    margin-left: 10px;
+    color: black;
+    border-left: 20px;
+  } */
+  
+  .appTime {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-size: 21px;
+    color: #f692b8;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+   .customContainer {
+    width: 50%;
+    /* border-left: 1px solid #52ecec;
+    border-bottom: 1px solid #52ecec;
+    border-right: 1px solid #52ecec;
+    border-top: 1px solid #52ecec ; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  } 
+  
+  .isCurrently .appointment {
+    background-color: #62AEC5;
+  }
+  .isCurrently .appTime {
+    color: black;
+  }
+  
+  .isAppointed {
+    background-color: #fac032;
+  }
+  
+  .isCanceled {
+    background-color: #e74f48;
+  }
+  
+  .isFinished {
+    background-color: #336cfb;
+  }
+  .operations-scheduled{
+
+    box-shadow:5px 8px 10px 0px #87cce0, 
+     0px 16px 12px 5px #afe4f3,
+     0 39px 5px 0px #fff;
+     padding-bottom: 50px;
+     transition: box-shadow 2s;
+
+}
+.operations-scheduled:hover{
+  box-shadow:20px 23px 35px 0px #87cce0, 
+  0px 36px 25px 20px #afe4f3,
+  0 39px 5px 0px #fff;
+}
+.operation-title{
+  margin: 20px;
+  background-color: #62AEC5;
+
+  margin-left: 0px;
+  margin-top: 0px;
+  width: 100%;
+  border-radius: 9px 9px 0px 0px;
+  color: white;
+  padding: 20px;
+}
+.operations-contain{
+  padding: 80px;
+
+  display: flex;
+}
+.fill{
+  color:#62AEC5;
+  display: box;
+  border: solid 1px #62AEC5;
+  padding: 10px 25px;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-left: 20px;
+  margin-top: 20px;
+
+}
+.modify{
+  color:#f692b8;
+  display: box;
+  border: solid 1px #f692b8;
+  padding: 10px 25px;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-left: 20px;
+  margin-top: 20px;
+
+}
